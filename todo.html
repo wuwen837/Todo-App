@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* html,body{
+            height: 100%;
+        } */
+        body{
+            background: linear-gradient(to right,rgb(113,65,168),rgba(44,114,251,1));
+            min-height: 100vh;
+
+        }
+        .todo-app{
+            width: 98%;
+            max-width: 500px;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 5px;
+            /* margin-left: 1%; */
+            margin: 40px auto 0; 
+            padding-top: 30px;
+
+        }
+        .title{
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .Todo-form{
+            display: flex;
+            margin: 20px auto;
+            justify-content: center; /* 子元素水平居中 */
+        }
+        .Todo-input{
+            border: 1px solid #dfe1e5;
+            outline: none;
+            width: 60%;
+            height: 50px;
+            border-radius: 20px 0 0 20px;
+            padding-left: 15px;
+        }
+        .Todo-button{
+            width: 100px;
+            height: 50px;
+            border-radius: 0 20px 20px 0;
+
+            text-align: center;
+            background: linear-gradient(to right,rgb(113,65,168),rgba(44,114,251,1));
+            color: #fff;
+            line-height: 50px;
+            cursor: pointer;
+            user-select: none;
+
+        }
+
+        .item{
+            display: flex;
+            align-items: center; /* 垂直居中 */
+            justify-content: space-between;
+            width: 80%;
+            height: 50px;
+            margin: 8px auto;
+            padding: 16px;
+            border-radius: 20px;
+            box-shadow: rgba(149,157,165,0.2) 0px 8px 20px;
+
+        }
+        .del{
+            color: red;
+        }
+        .complet{
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-app">
+        <div class="title">Todo</div>
+        <div class="Todo-form">
+            <input type="text" class="Todo-input" placeholder="add todo">
+            <div class="Todo-button">add todo</div>
+        </div>
+        <div class="item complet">
+            <div>
+                <input type="checkbox">
+                <span class="name">吃饭</span>
+            </div>
+            
+            <!-- <div class="name">吃饭</div> -->
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div>
+                <input type="checkbox">
+                <span class="name">吃饭</span>
+            </div>
+            
+            <!-- <div class="name">吃饭</div> -->
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div>
+                <input type="checkbox">
+                <span class="name">吃饭</span>
+            </div>
+            
+            <!-- <div class="name">吃饭</div> -->
+            <div class="del">del</div>
+        </div>
+    </div>
+</body>
+</html>
